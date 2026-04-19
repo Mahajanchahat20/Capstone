@@ -1,4 +1,8 @@
 # Multimodal Intent Recognition in Dialogue (BEAR & ARL)
+
+# Project Overview
+This project implements and adapts two multimodal frameworks—BEAR and an ARL-based model—for intent classification on a custom dataset derived from a Hindi web series. The system leverages text (Hindi + Hinglish), audio, and video to perform multimodal understanding of conversational intent.
+
 # Dataset (Custom Multimodal Dataset from Hindi Web Series)
 This project uses a handmade multimodal dataset constructed from a Hindi web series, designed for intent classification in conversational settings.
 
