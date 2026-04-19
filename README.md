@@ -204,3 +204,14 @@ Overall, the changes were made to adapt the ARL framework to a small, real-world
   booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems}
 }
 ```
+# How to Run
+
+1. Install dependencies:
+pip install transformers torchaudio torchvision pandas scikit-learn opencv-python
+
+2. Update dataset path in code:
+BASE = "your_path"
+
+3. Run:
+python bear_with_grouping.py
+python arl_with_grouping.py
