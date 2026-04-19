@@ -100,6 +100,17 @@ Finally, two label settings are used: original labels and grouped labels. The gr
 
 Overall, these changes adapt BEAR from a large-scale research framework to a smaller, real-world multimodal dataset, while preserving its key ideas of multimodal fusion, missing modality handling, and label-aware reasoning.
 
+# Citataion
+```
+@inproceedings{yang2025uncertain,
+  title={Uncertain multimodal intention and emotion understanding in the wild},
+  author={Yang, Qu and Shi, Qinghongya and Wang, Tongxin and Ye, Mang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={24700--24709},
+  year={2025}
+}
+```
+
 # 2. ARL-Based Multimodal Model (NeurIPS 2025)
 
 Paper: Adaptive Re-calibration Learning for Balanced Multimodal Intention Recognition
