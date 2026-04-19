@@ -1,4 +1,4 @@
-# Reading Between the Lines: Multimodal Intent from Dialogue
+# A Multimodal Approach to Intent Inference in Dialogues
 
 # Project Overview
 This project implements and adapts two multimodal frameworks—BEAR and an ARL-based model—for intent classification on a custom dataset derived from a Hindi web series. The system leverages text (Hindi + Hinglish), audio, and video to perform multimodal understanding of conversational intent.
