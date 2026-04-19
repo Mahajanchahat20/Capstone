@@ -1,7 +1,7 @@
 # A Multimodal Approach to Intent Inference in Dialogues
 
 # Project Overview
-This project implements and adapts two multimodal frameworks—BEAR and an ARL-based model—for intent classification on a custom dataset derived from a Hindi web series. The system leverages text (Hindi + Hinglish), audio, and video to perform multimodal understanding of conversational intent.
+This project implements and adapts two multimodal frameworks-BEAR and an ARL-based model-for intent classification on a custom dataset derived from a Hindi web series. The system leverages text (Hindi + Hinglish), audio, and video to perform multimodal understanding of conversational intent.
 
 # Dataset (Custom Multimodal Dataset from Hindi Web Series)
 This project uses a handmade multimodal dataset constructed from a Hindi web series, designed for intent classification in conversational settings.
@@ -141,7 +141,7 @@ Finally, two label settings are used: original labels and grouped labels. The gr
 
 Overall, these changes adapt BEAR from a large-scale research framework to a smaller, real-world multimodal dataset, while preserving its key ideas of multimodal fusion, missing modality handling, and label-aware reasoning.
 
-# Citataion
+# Citation
 ```
 @inproceedings{yang2025uncertain,
   title={Uncertain multimodal intention and emotion understanding in the wild},
