@@ -1,4 +1,4 @@
-# Multimodal Intent Classification using BEAR & ARL
+# Multimodal Intent Recognition in Dialogue (BEAR & ARL)
 # Dataset (Custom Multimodal Dataset from Hindi Web Series)
 This project uses a handmade multimodal dataset constructed from a Hindi web series, designed for intent classification in conversational settings.
 
@@ -44,6 +44,43 @@ Preserves conversational nuance
 Similar intents merged (e.g., inform + explain)
 Reduces imbalance
 Improves model stability
+
+# Intents
+Intent Classes
+# Express Emotions / Attitudes
+Complain
+Praise
+Apologise
+Thank
+Criticize
+Care
+Agree
+Taunt
+Flaunt
+Oppose
+Joke
+Doubt
+Acknowledge
+Refuse
+Warn
+Emphasize
+# Achieve Goals
+Inform
+Advise
+Arrange
+Introduce
+Comfort
+Leave
+Prevent
+Greet
+Ask for Help
+Ask for Opinions
+Confirm
+Explain
+Invite
+Plan
+# Other
+Other (Out-of-Scope / OOS)
 
 # Multimodal Intent Classification using BEAR & ARL (Custom Dataset)
 
