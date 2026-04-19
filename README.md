@@ -130,3 +130,16 @@ Late fusion classification
 # Important Implementation Detail:
 Encoders are partially defined as trainable, but forward pass uses torch.no_grad()
 This effectively freezes backbone encoders during training
+
+# Why These Adaptations Were Made
+The ARL framework is designed for multimodal intention recognition with balanced datasets and full end-to-end training. In this project, it is adapted to a custom dataset built from a Hindi web series, which differs in size, structure, and modality setup. These differences required practical modifications while keeping the core ideas of ARL intact.
+
+The dataset consists of short video clips with Hinglish text, audio, and video, so the pipeline was adapted to load clips via Video ID, extract audio directly from video, and combine Hinglish and Hindi text into a single input. Pretrained models such as XLM-Roberta (text), Wav2Vec2 (audio), and R3D-18 (video) were used because they are well-suited for this type of data and are practical for implementation.
+
+Another key change is that encoder forward passes are run under torch.no_grad(), effectively freezing them during training. This was done because the dataset is relatively small (~400 samples), and fully fine-tuning large models would lead to overfitting and unstable training. Instead, only projection layers, calibration parameters, and the classifier are trained, making the model more stable.
+
+The implementation also includes label grouping, where similar intent classes are merged. This helps reduce class imbalance and improves learning stability, which is important for a small dataset with many fine-grained classes.
+
+Despite these changes, the core contributions of the ARL paper are preserved. The model still applies Weighted Encoder Calibration (WEC) to learn modality importance and Contribution-Inverse Sample Calibration (CISC) to reduce the dominance of any single modality. These mechanisms are particularly useful in this dataset, where the importance of text, audio, and video can vary across samples.
+
+Overall, the changes were made to adapt the ARL framework to a small, real-world multimodal dataset, ensuring the model remains both trainable and effective while preserving its key ideas.
