@@ -143,3 +143,12 @@ The implementation also includes label grouping, where similar intent classes ar
 Despite these changes, the core contributions of the ARL paper are preserved. The model still applies Weighted Encoder Calibration (WEC) to learn modality importance and Contribution-Inverse Sample Calibration (CISC) to reduce the dominance of any single modality. These mechanisms are particularly useful in this dataset, where the importance of text, audio, and video can vary across samples.
 
 Overall, the changes were made to adapt the ARL framework to a small, real-world multimodal dataset, ensuring the model remains both trainable and effective while preserving its key ideas.
+
+# Citation
+```
+@inproceedings{yangadaptive,
+  title={Adaptive Re-calibration Learning for Balanced Multimodal Intention Recognition},
+  author={Yang, Qu and Li, Xiyang and Lin, Fu and Ye, Mang},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems}
+}
+```
